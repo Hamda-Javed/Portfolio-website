@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-top: 80px}
+
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 600;
+    
+}
+
+h5{
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+ 
+    width: 200px;
+    height:200px;
+
+}
+
+
+.navbar-brand img {
+    border: 5px solid var(--color-brand);
+    border-radius: 50%;
+    margin-left: -80px;
+
+
+}
+
+.container{
+    padding-top: 1rem;
+}
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: -80px;
+ 
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand2);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+li{
+    padding-top:1rem;
+    list-style: none;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: 1000;
+    } }
+
+    .nav-item{
+        text-align: center; }
+
+    
+
+    /* CONTENT WRAPPER */
+
+    .main-wrapper {
+        display: flex;
+        min-height: 100vh;
+        text-align:start;
+        padding-left: 200px;
+    
+    }
+
+    .container {
+        padding-top: 1rem;
+    }
+    
+    #content-wrapper {
+        flex-grow: 1;
+    }
+
+
+    .btn {
+        padding: 12px 28px;
+        font-weight: 700;
+    }
+    
+    .btn-brand {
+        background-color: var(--color-brand);
+        border-color: var(--color-brand);
+        color: var(--color-base);
+    }
+    
+    .btn-brand:hover,
+    .btn-brand:focus {
+        background-color: var(--color-brand2);
+        color: var(--color-base);
+        border-color: var(--color-brand2);
+    }
+    
+    .link-custom {
+        font-weight: 700;
+        position: relative;
+    }
+    
+    .link-custom::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: var(--color-brand);
+        position: absolute;
+        left: 0;
+        top: 110%;
+        transition: all 0.4s;
+    }
+
+    .text-brand {
+        color: var(--color-brand);
+    }
+    
+    .link-custom:hover::after {
+        width: 100%;
+    }
+
+    .full-height {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        border-bottom: 2px solid rgba(255,255,255, 0.1);
+    }
+
+    #services{
+        padding-top:1px;
+        padding-left: 400px;
+   
+    }
+
+    .bg-base{
+        background-color: var(--color-base);
+    }
+
+    .shadow-effect{
+        transition:all 0.5s;
+
+    }
+    .shadow-effect:hover{
+        box-shadow:-6px 6px 0 0px var(--color-brand);
+    }
+   
+    .iconbox {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        background-color: var(--color-brand);
+        color: var(--color-base);
+    }
+
+    .card-custom .card-custom-image {
+        overflow: hidden;
+    }
+
+    .card-custom .card-custom-image img {
+        transition: all 0.4s ease;
+    }
+
+    .card-custom:hover .card-custom-image img {
+        transform: scale(1.1);
+    }
+  
+
+    .card-custom {
+        margin-bottom: 20px;
+        overflow: hidden;
+        margin-left: 90px;
+    }
+    
+    .card-custom-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-custom-content {
+        padding: 20px;
+    }
+    
+    .bg-base {
+        background-color: #0363464b;
+    }
+    
+    .shadow-effect {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .rounded-4 {
+        border-radius: 0.25rem;
+    }
+    
+    .link-custom {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    p{
+        color:rgb(255, 255, 255);
+    }
+    
+#work{
+    margin-left:150px;
+    padding-left:150px;
+}
+#work , .container{
+    padding-left: 90px;
+}
+.row-gy-5,#about{
+    margin-left: 150px;
+    display:flex;
+  }
+
+  #reviews{
+    margin-left: 150px;
+  }
+
+  #footer{
+    margin-left: 150px;
+  }
+
+  /* CONTACT */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+
+
+/* Define keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation when the class is added */
+.fade-in {
+    animation: fadeIn 0.8s forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s forwards;
+}
+
+/* Initial state of elements */
+[data-animate] {
+    opacity: 0;
+}
